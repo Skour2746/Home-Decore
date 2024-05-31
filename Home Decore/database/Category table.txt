@@ -1,0 +1,11 @@
+SET IDENTITY_INSERT [dbo].[Category] ON
+INSERT INTO [dbo].[Category] ([id], [category], [image], [status], [rts]) VALUES (1, N'Home', N'home.jpg', N'0', N'Mar 18 2023  5:40PM')
+INSERT INTO [dbo].[Category] ([id], [category], [image], [status], [rts]) VALUES (2, N'Construction', N'images.jpg', N'1', N'Mar 18 2023  5:42PM')
+INSERT INTO [dbo].[Category] ([id], [category], [image], [status], [rts]) VALUES (3, N'Furniture', N'3.jpg', N'1', N'Mar 18 2023  5:44PM')
+INSERT INTO [dbo].[Category] ([id], [category], [image], [status], [rts]) VALUES (4, N'Electronics & Home Appliances', N'4.jpg', N'1', N'Mar 18 2023  5:44PM')
+INSERT INTO [dbo].[Category] ([id], [category], [image], [status], [rts]) VALUES (5, N'Decore', N'5.jpg', N'1', N'Mar 18 2023  5:45PM')
+INSERT INTO [dbo].[Category] ([id], [category], [image], [status], [rts]) VALUES (6, N'Vastu Tips', N'vastu.jpg', N'1', N'Mar 18 2023  5:47PM')
+INSERT INTO [dbo].[Category] ([id], [category], [image], [status], [rts]) VALUES (8, N'Pepple', N'pepple.jpg', N'1', N'Mar 20 2023  3:39PM')
+INSERT INTO [dbo].[Category] ([id], [category], [image], [status], [rts]) VALUES (12, N'Gardening', N'gardening.jpg', N'1', N'May  9 2023 12:35PM')
+INSERT INTO [dbo].[Category] ([id], [category], [image], [status], [rts]) VALUES (13, N'Other', N'12.jpg', N'1', N'May 24 2023  3:29PM')
+SET IDENTITY_INSERT [dbo].[Category] OFF

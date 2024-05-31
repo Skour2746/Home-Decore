@@ -1,0 +1,8 @@
+SET IDENTITY_INSERT [dbo].[Mini_Category] ON
+INSERT INTO [dbo].[Mini_Category] ([id], [cid], [Subcategory_id], [minicategory], [image], [status], [rts]) VALUES (2, N'3', N'11', N'Canopy beds', N'2.jpg', N'1', N'2023-03-29 12:24:32')
+INSERT INTO [dbo].[Mini_Category] ([id], [cid], [Subcategory_id], [minicategory], [image], [status], [rts]) VALUES (3, N'3', N'11', N'Platform beds', N'3.jpg', N'0', N'2023-03-29 12:39:50')
+INSERT INTO [dbo].[Mini_Category] ([id], [cid], [Subcategory_id], [minicategory], [image], [status], [rts]) VALUES (5, N'3', N'11', N'Bunk Beds', N'4.jpg', N'1', N'2023-05-09 13:00:03')
+INSERT INTO [dbo].[Mini_Category] ([id], [cid], [Subcategory_id], [minicategory], [image], [status], [rts]) VALUES (6, N'2', N'1', N'Mild Steel Rods', N'6.jpg', N'1', N'2023-05-12 14:43:49')
+INSERT INTO [dbo].[Mini_Category] ([id], [cid], [Subcategory_id], [minicategory], [image], [status], [rts]) VALUES (7, N'4', N'21', N'LED TVs', N'7.jpg', N'1', N'2023-05-12 14:54:04')
+INSERT INTO [dbo].[Mini_Category] ([id], [cid], [Subcategory_id], [minicategory], [image], [status], [rts]) VALUES (8, N'5', N'28', N'wallpaper', N'8.jpg', N'1', N'2023-05-12 14:55:30')
+SET IDENTITY_INSERT [dbo].[Mini_Category] OFF

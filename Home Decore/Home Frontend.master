@@ -1,0 +1,324 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home Frontend.master.cs" Inherits="Home_Frontend" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+    <meta name="description" content="BizMap Directory & Listings HTML templates">
+    <meta property="og:title" content="BizMap Directory & Listings HTML templates">
+    <meta property="og:description" content="BizMap Directory & Listings HTML templates">
+    <meta property="og:image" content="">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- PAGE TITLE HERE -->
+    <title>BizMap Directory & Listings HTML templates</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="css/plugins.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/flaticon/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="plugins/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="plugins/themify/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="plugins/simple-icon/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/templete.min.css">
+    <link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/star-rating-svg.css">
+    <style>
+        .comments-area .comment-form p.comment-form-comment {
+            width: 100%;
+            display: block;
+            clear: both;
+        }
+
+        .comments-area .comment-form p textarea {
+            height: 150px;
+            padding: 24px 60px 24px 30px;
+            color: #676781;
+            font-size: 14px;
+            line-height: 20px;
+            resize: none;
+            border-radius: 30px;
+            box-shadow: 0 3px 10px 0 rgba(0,0,0,.05);
+        }
+
+        .comments-area .comment-form p label {
+            display: none;
+            line-height: 18px;
+            margin-bottom: 10px;
+        }
+
+        .comments-area .comment-form p label {
+            display: none;
+            line-height: 18px;
+            margin-bottom: 10px;
+        }
+
+        .comments-area p.comment-form-comment::before {
+            content: "\f040";
+        }
+
+        .comments-area .comment-form p input[type=text] {
+            height: 60px;
+            line-height: 20px;
+            padding: 20px 60px 20px 30px;
+            border-radius: 30px;
+            color: #676781;
+            font-size: 14px;
+            box-shadow: 0 3px 10px 0 rgba(0,0,0,.05);
+        }
+
+        .topbar ul li {
+            list-style: none;
+            float: left;
+        }
+
+            .topbar ul li i {
+                color: white;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+
+        .topbar1 ul {
+            float: right;
+        }
+
+            .topbar1 ul li {
+                border-radius: 0;
+                color: #fff;
+                font-size: 15px;
+                padding: 19px 20px;
+                cursor: pointer;
+                font-weight: 500;
+                display: inline-block;
+                text-transform: uppercase;
+            }
+
+        #btncart,#btnlogin,#btnlogout {
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    </style>
+    <!-- Google Font -->
+    <style>
+        @import url('../css');
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="bg">
+    <form id="form1" runat="server">
+
+        <div id="loading-area"></div>
+        <div class="page-wraper">
+
+
+
+            <!-- header -->
+            <header class="site-header header-transparent mo-left">
+                <!-- main header -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 topbar">
+                                    <ul>
+                                        <li><i class="fa fa-mobile" aria-hidden="true">&nbsp;7976300121, 6375841417</i></li>
+                                        <li class="ml-4"><i class="fa fa-envelope-o" aria-hidden="true">&nbsp;Skour@gmail.com</i></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-8 topbar1">
+                                    <ul>
+                                        <li>
+                                            <%--                                            <asp:LinkButton ID="btnaccount" runat="server" class="bnt1 fs-6" OnClick="btnaccount_Click1">
+                                                <asp:Label ID="lblUsername" class="text-center" runat="server" Text="Account"></asp:Label>
+                                            </asp:LinkButton>--%>
+                                            Account
+                                        </li>
+                                        <li>
+                                            <asp:Button ID="btncart" Style="background: none; border: none;" runat="server" class="bnt1 fs-6" OnClick="btncart_Click" Text="Cart"></asp:Button></li>
+                                        <li>Order</li>
+                                        <li>
+                                            <asp:Button ID="btnlogin" Style="background: none; border: none;" runat="server" class="bnt1 fs-6 d-none d-lg-block" OnClick="Btnlogin_Click" Text="Login"></asp:Button>
+                                            <asp:Button ID="btnlogout" Style="background: none; border: none;" runat="server" class="bnt1 fs-6 d-none d-lg-block" OnClick="Btnlogout_Click" Text="Logout"></asp:Button>
+
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sticky-header main-bar-wraper navbar-expand-lg">
+                    <div class="main-bar clearfix ">
+                        <div class="container-fluid clearfix">
+                            <!-- website logo -->
+                            <div class="logo-header mostion">
+                                <a href="index.html" class="logo-1">
+                                    <img src="Admin/images1/logo/logo.png" alt=""></a>
+                                <a href="index.html" class="logo-2">
+                                    <img src="Admin/images1/logo/black_logo.png" alt=""></a>
+                            </div>
+                            <!-- nav toggle button -->
+                            <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- extra nav -->
+                            <%--<div class="extra-nav">
+                                <div class="extra-cell">
+                                    <a href="register.html" class="site-button-link white"><i class="ti-import m-r5 rotate90"></i>Sign In</a>
+                                    <a href="add-listing.html" class="site-button radius-xl m-l10"><i class="fa fa-plus m-r5"></i>Add Listing</a>
+                                </div>
+                            </div>--%>
+                            <!-- main nav -->
+                            <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="index.aspx">Home</a></li>
+                                    <asp:ListView ID="lv_mainmenu" runat="server">
+                                        <ItemTemplate>
+                                            <li class="active"><a href="#"><%#Eval("category") %></a>
+                                                <asp:Label ID="lblmainId" runat="server" Text='<%# Eval("id") %>' Visible="false"></asp:Label>
+                                                <ul class="sub-menu">
+                                                    <asp:ListView ID="lv_submenu" runat="server">
+                                                        <ItemTemplate>
+                                                            <asp:Label ID="lblsubId" runat="server" Text='<%# Eval("cid") %>' Visible="false"></asp:Label>
+                                                            <li><a href="Product.aspx?Subid=<%#Eval("id") %>"><%#Eval("SubCategory") %></a></li>
+                                                        </ItemTemplate>
+                                                    </asp:ListView>
+                                                </ul>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:ListView>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main header END -->
+            </header>
+            <!-- header END -->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <!-- Footer -->
+            <footer class="site-footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
+                                <div class="widget">
+                                    <img src="Admin/images1/logo/logo.png" class="m-b15" alt="" width="180">
+                                    <p class="text-capitalize m-b20">The journey of transforming a house into a home is a poetic exploration of self-discovery and expression.</p>
+                                    <ul class="list-inline m-a0">
+                                        <li><a href="javascript:void(0);" class="site-button facebook circle "><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="javascript:void(0);" class="site-button google-plus circle "><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="javascript:void(0);" class="site-button linkedin circle "><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="javascript:void(0);" class="site-button instagram circle "><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="javascript:void(0);" class="site-button twitter circle "><i class="fa fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12 col-12">
+                                <div class="widget border-0">
+                                    <h5 class="m-b30 text-white">Frequently Asked Questions</h5>
+
+
+                                    <ul class="list-2 list-line">
+                                        <asp:ListView ID="lv_category1" runat="server">
+                                            <ItemTemplate>
+                                                <li><a href="javascript:void(0);"><%# Eval("category") %></a></li>
+                                            </ItemTemplate>
+                                        </asp:ListView>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 col-12">
+                                <div class="widget widget_getintuch">
+                                    <h5 class="m-b30 text-white">Contact us</h5>
+                                    <ul>
+                                        <li><i class="ti-location-pin"></i><strong>address</strong> Laxmi Narayan Temple,Bhilwara (Raj.)</li>
+                                        <li><i class="ti-mobile"></i><strong>phone</strong>7976300121,6375841417</li>
+                                        <li><i class="ti-email"></i><strong>email</strong>Skour@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <span class="fbottom-like">© 2020 Design With <a class="like-btn" href="javascript:void(0)"><i class="fa fa-heart"></i></a>By DexignZone </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer END-->
+            <button class="scroltop fa fa-chevron-up"></button>
+        </div>
+        <!-- JAVASCRIPT FILES ========================================= -->
+        <script src="js/combining.js"></script>
+        <!-- CONTACT JS  -->
+        <script src="js/dz.carousel.min.js"></script>
+        <!-- CONTACT JS  -->
+
+        <script>
+            const imgs = document.querySelectorAll('.img-select a');
+            const imgBtns = [...imgs];
+            let imgId = 1;
+
+            imgBtns.forEach((imgItem) => {
+                imgItem.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    imgId = imgItem.dataset.id;
+                    slideImage();
+                });
+            });
+
+            function slideImage() {
+                const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+                document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+            }
+
+            window.addEventListener('resize', slideImage);  
+        </script>
+
+    </form>
+</body>
+</html>
